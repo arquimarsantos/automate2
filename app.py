@@ -2,7 +2,6 @@ from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
 from datetime import datetime
-from threading import Thread
 from flask import Flask
 import pickle
 import time

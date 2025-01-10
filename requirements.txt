@@ -1,0 +1,8 @@
+selenium==4.27.1
+requests==2.32.3
+packaging==24.1
+imap-tools==1.7.2
+urlextract==1.9.0
+webdriver-manager==4.0.2
+flask==3.1.0
+gunicorn==23.0.0

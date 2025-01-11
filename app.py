@@ -35,7 +35,7 @@ def automate2():
             for cookie in cookies:
                 driver.add_cookie(cookie)
         driver.get("https://gruposwhats.app/meus-grupos")
-        #time.sleep(3)
+        time.sleep(1)
         bt_element = driver.find_element(By.XPATH, "//button[contains(@class, 'btn-success')]")
         if bt_element.text == 'Impulsionar!':
             ActionChains(driver).move_to_element(bt_element).click().perform()

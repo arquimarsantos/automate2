@@ -14,4 +14,4 @@ RUN apt-get update && apt-get install -y wget unzip && \
     apt-get clean
 
 #CMD ["python", "app.py"]
-CMD gunicorn --workers=3 --access-logfile '-' --error-logfile '-' app:app --timeout 0
+CMD gunicorn --workers=1 --access-logfile '-' --error-logfile '-' app:app --timeout 120

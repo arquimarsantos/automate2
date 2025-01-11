@@ -41,7 +41,7 @@ def automate2():
             ActionChains(driver).move_to_element(bt_element).click().perform()
             print("Grupo impulsionado em gruposwhats.app - ", dt_string)
         else:
-            print("O grupo ja foi impulsionado, tente novamente depois! - ", dt_string)
+            print("O grupo #2 ja foi impulsionado, tente novamente depois! - ", dt_string)
         ####
         driver.quit()
         print("Automação #2 concluída com sucesso! - ", dt_string)

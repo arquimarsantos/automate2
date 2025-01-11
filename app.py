@@ -36,9 +36,12 @@ def automate2():
                 driver.add_cookie(cookie)
         driver.get("https://gruposwhats.app/meus-grupos")
         #time.sleep(3)
-        bt_element = driver.find_element(By.XPATH, "//button[contains(@class, 'btn-success') and text()='Impulsionar!']")
-        ActionChains(driver).move_to_element(bt_element).click().perform()
-        print("Grupo impulsionado em gruposwhats.app - ", dt_string)
+        bt_element = driver.find_element(By.XPATH, "//button[contains(@class, 'btn-success')]")
+        if bt_element.text == 'Impulsionar!':
+            ActionChains(driver).move_to_element(bt_element).click().perform()
+            print("Grupo impulsionado em gruposwhats.app - ", dt_string)
+        else:
+            print("O grupo ja foi impulsionado, tente novamente depois! - ", dt_string)
         ####
         driver.quit()
         print("Automação #2 concluída com sucesso! - ", dt_string)

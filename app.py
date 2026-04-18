@@ -126,10 +126,9 @@ def start_schedule():
 
 print("Script iniciado com sucesso! - ", now())
 
-start_schedule()
-
 @app.route('/')
 def index():
+    start_schedule()
     return 'Automação ativada!'
     
 if __name__ == '__main__':
